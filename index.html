@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <Html>
     <Head>
+        <style>context{position:fixed;z-index:10000;width:150px;background:white;display:none;}context.visible{display:block;}#context-menu .item {font-size:15px;color:black;cursor:pointer;}context .item:hover {background:lightgray;}</style>
         <Title>MboxOS</Title>
         <script src="winbox.bundle.js" ></script>
+        <script src="context.js" ></script>
+        
     </Head>
     <Body style="height: 100vh;background-color:rgb(4, 144, 126);">
+        <context>
+            <div class="item">Option 1</div>
+            <div class="item">Option 2</div>
+            <div class="item">Option 3</div>
+            <div class="item">Option 4</div>
+            <div class="item">Option 5</div>
+          <context>
         <button onclick="new WinBox({
                 title: 'Test App v0.1',
                 html: '<H1>Test.</H1><H2>More Later.</H2><H6>I promise.</H6>'
