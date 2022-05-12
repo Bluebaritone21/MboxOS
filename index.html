@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <Html>
     <Head>
-<Title>MboxOS</Title>
-<script src="winbox.bundle.js" ></script>
+        <Title>MboxOS</Title>
+        <script src="winbox.bundle.js" ></script>
     </Head>
-<Body style="height: 100vh;background-color:rgb(4, 144, 126);">
-    <button onclick="new WinBox('Test App');">Open Test App</button>
+    <Body style="height: 100vh;background-color:rgb(4, 144, 126);">
+        <button onclick="new WinBox({
+                title: 'Test App v0.1',
+                html: '<H1>Test.</H1><H2>More Later.</H2><H6>I promise.</H6>'
+                                   });">
+                Test App</button>
 </Body>
